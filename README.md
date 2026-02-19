@@ -1,5 +1,9 @@
 ﻿# UtilStack - Advanced Free Online Tools Platform
 
+## Live Website
+
+- UtilStack: https://srma4tech.github.io/UtilStack/
+
 UtilStack is a production-ready, browser-only utility platform built as a static hybrid SPA + multipage system. It is designed for GitHub Pages deployment, SEO discoverability, fast mobile performance, and long-term modular expansion.
 
 ## Product Focus
@@ -11,6 +15,7 @@ Spiritual tools are maintained as a separate product line.
 
 - 100% client-side processing (no backend, no database)
 - Shared UI shell with dynamic module loading
+- Dedicated Home dashboard as the default SPA route
 - SEO crawlable static pages for each tool
 - Dark/light theme toggle
 - Mobile-first responsive layout
@@ -83,6 +88,14 @@ Spiritual tools are maintained as a separate product line.
 - Modules are lazy-loaded with dynamic `import()` only when opened.
 - Heavy libraries (OCR/PDF) are lazy-fetched only on user action.
 - Static SEO pages set metadata and preload the selected tool through `data-default-tool`.
+- The `home` route is the default dashboard on first load; tool modules load only after explicit user selection.
+
+## Home Dashboard & Branding
+
+- Home is now the default landing state to improve first-time UX, trust, and SEO content depth.
+- The dashboard includes hero messaging, responsive tool cards, a 3-step workflow section, and ecosystem context.
+- UtilStack remains focused on global productivity utilities under SRMA4Tech branding.
+- GitaPath remains a separate spiritual app product line, linked contextually from UtilStack.
 
 ## GitHub Pages Deployment
 
@@ -107,6 +120,15 @@ Spiritual tools are maintained as a separate product line.
 - `sitemap.xml` entries for all primary pages
 - Friendly `404.html` redirect strategy for static hosting
 
+## SEO Strategy
+
+- Keyword targeting: Core pages are optimized around `free online tools`, `image to PDF converter`, `OCR image to text`, `JSON formatter online`, `word counter tool`, `age calculator online`, and `compress image online`.
+- Content depth: Homepage and tool pages include structured explanatory sections plus FAQ content to improve topical relevance and crawl comprehension.
+- Structured data: Homepage uses `WebSite` and `SoftwareApplication`; tool pages include `WebApplication` and `FAQPage` JSON-LD.
+- Internal linking: Homepage links to all tool pages, and each tool page links back to Home plus related tools for stronger crawl paths.
+- Indexing files: `robots.txt` and `sitemap.xml` use the live production URL (`https://srma4tech.github.io/UtilStack/`) with `lastmod` timestamps.
+- Expansion roadmap: Additional long-form landing pages are included for keyword entry points and can be expanded with more use-case clusters over time.
+
 ## Monetization Roadmap
 
 1. Contextual ad placements in sidebar/footer (AdSense/alternatives)
@@ -125,3 +147,10 @@ Live at: https://srma4tech.github.io/gitapath/
 - Keep all paths relative for GitHub Pages project deployments.
 - Add future tools by creating a new module and registry entry in `assets/js/core/tools-registry.js`.
 - Keep heavy dependencies lazy-loaded to protect performance.
+
+
+## Creator & Contact
+
+- GitHub: https://github.com/srma4tech
+- Instagram: https://www.instagram.com/sachin.sharma.sde/
+- UtilStack Live: https://srma4tech.github.io/UtilStack/

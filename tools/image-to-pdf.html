@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image to PDF Converter - UtilStack</title>
-  <meta name="description" content="Convert multiple images into one PDF file directly in your browser.">
-  <meta property="og:title" content="Image to PDF Converter - UtilStack">
-  <meta property="og:description" content="Convert multiple images into one PDF file directly in your browser.">
+  <title>Image to PDF Converter - Free Online | UtilStack</title>
+  <meta name="description" content="Convert multiple images into one PDF with this free image to PDF converter. Fast browser-based processing, no signup, no backend.">
+  <meta property="og:title" content="Image to PDF Converter - Free Online | UtilStack">
+  <meta property="og:description" content="Free image to PDF converter running in browser.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourusername.github.io/UtilStack/tools/image-to-pdf.html">
-  <meta property="og:image" content="../assets/images/og-cover.png">
+  <meta property="og:url" content="https://srma4tech.github.io/UtilStack/tools/image-to-pdf.html">
+  <meta property="og:image" content="https://srma4tech.github.io/UtilStack/assets/images/og-cover.png">
   <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://yourusername.github.io/UtilStack/tools/image-to-pdf.html">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="canonical" href="https://srma4tech.github.io/UtilStack/tools/image-to-pdf.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="shortcut icon" href="../assets/images/favicon.svg">
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -35,33 +36,81 @@
       }
     };
   </script>
+  <script src="https://cdn.tailwindcss.com" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "Image to PDF Converter - Free Online",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Any",
+          "url": "https://srma4tech.github.io/UtilStack/tools/image-to-pdf.html",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "description": "Convert multiple images into one PDF with this free image to PDF converter. Fast browser-based processing, no signup, no backend."
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I add multiple images in one PDF?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The converter accepts multiple images and places them in sequence." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this image to PDF converter free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can use it free online without account creation." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my images stay private?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Core conversion is handled in browser for a private and convenient workflow." }
+        }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 <body class="min-h-screen font-body text-slate-900 dark:text-slate-100" data-default-tool="image-to-pdf">
   <div class="app-bg"></div>
   <div class="relative min-h-screen">
     <header class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         <a href="../index.html" class="flex items-center gap-3" aria-label="UtilStack Home">
-          <span class="grid h-10 w-10 place-content-center rounded-xl bg-brand-500 text-white shadow-lg shadow-brand-500/30">U</span>
+          <span class="grid h-10 w-10 place-content-center rounded-xl bg-[#0f7db8] text-white font-semibold shadow-lg shadow-[rgba(15,125,184,0.35)]">U</span>
           <div>
             <p class="font-display text-lg font-semibold leading-tight">UtilStack</p>
             <p class="text-xs text-slate-500 dark:text-slate-400">Advanced Free Online Tools</p>
           </div>
         </a>
-        <div class="flex items-center gap-2">
-          <button id="theme-toggle" class="btn-secondary" type="button" aria-label="Toggle dark mode">Toggle Theme</button>
-        </div>
-      </div>
+                <div class="flex items-center gap-2">
+          <button id="route-home" class="nav-tab" type="button" aria-current="false">Home</button>
+          <button id="route-tools" class="nav-tab active" type="button" aria-current="page">Tools</button>
+          <button id="theme-toggle" class="btn-secondary" type="button" aria-label="Toggle dark mode">Theme</button>
+          <a class="icon-link" href="https://github.com/srma4tech" target="_blank" rel="noopener noreferrer" aria-label="SRMA4Tech on GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+              <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6a3.18 3.18 0 0 0-1.33-1.76c-1.08-.74.08-.72.08-.72a2.5 2.5 0 0 1 1.82 1.23 2.54 2.54 0 0 0 3.47 1 2.54 2.54 0 0 1 .76-1.6c-2.66-.3-5.47-1.33-5.47-5.92a4.64 4.64 0 0 1 1.23-3.22 4.31 4.31 0 0 1 .12-3.18s1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23a4.31 4.31 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.23 3.22c0 4.6-2.82 5.62-5.5 5.92a2.84 2.84 0 0 1 .8 2.2v3.25c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/>
+            </svg>
+          </a>
+          <a class="icon-link" href="https://www.instagram.com/sachin.sharma.sde/" target="_blank" rel="noopener noreferrer" aria-label="Sachin Sharma on Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm8.5 1.5h-8.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.38-2.37a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24Z"/>
+            </svg>
+          </a>
+        </div>      </div>
     </header>
 
     <main class="mx-auto grid max-w-7xl gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[320px_1fr] lg:px-8">
-      <aside class="card p-4">
+      <aside id="tool-panel" class="card p-4 mobile-tool-panel">
         <div class="mb-3 flex items-center justify-between">
-          <h1 class="font-display text-xl">Tools</h1>
+          <p class="font-display text-xl">Tools</p>
           <span class="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 dark:bg-brand-700/20 dark:text-brand-100">7 Live</span>
         </div>
         <p class="mb-4 text-sm text-slate-600 dark:text-slate-300">Open any tool instantly. Everything runs locally in your browser.</p>
@@ -70,12 +119,48 @@
 
       <section class="card min-h-[560px] p-5 sm:p-6">
         <div class="mb-4 border-b border-slate-200 pb-4 dark:border-slate-800">
-          <h2 id="tool-title" class="font-display text-2xl font-semibold">Choose a Tool</h2>
-          <p id="tool-description" class="mt-1 text-sm text-slate-600 dark:text-slate-300">Select a tool to begin.</p>
+          <h2 id="tool-title" class="font-display text-2xl font-semibold">Image to PDF Converter - Free Online</h2>
+          <p id="tool-description" class="mt-1 text-sm text-slate-600 dark:text-slate-300">Convert multiple images into one PDF with this free image to PDF converter. Fast browser-based processing, no signup, no backend.</p>
         </div>
         <div id="tool-root" class="tool-fade"></div>
       </section>
     </main>
+
+    <section class="mx-auto max-w-7xl px-4 pb-6 sm:px-6 lg:px-8">
+      <article class="card p-5 sm:p-6">
+        <h1 class="font-display text-2xl font-semibold">Image to PDF Converter - Free Online</h1>
+        <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">This utility is built for people who need combining photos, scanned pages, and document snapshots into a single PDF file without installing desktop software. As part of UtilStack, this tool follows the same lightweight standard as our free online tools collection: open the page, run the task, and get output quickly. Many users arrive from searches such as image to PDF converter, OCR image to text, JSON formatter online, word counter tool, age calculator online, and compress image online. Instead of sending visitors to complex dashboards, UtilStack keeps the workflow direct and browser-based for day-to-day productivity.</p>
+        <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">For reliability and privacy, this page is designed to run core processing in your browser so you can work faster with fewer steps. There is no mandatory sign-up, no credit card wall, and no heavy framework overhead. If you need a quick result during office work, study sessions, or personal tasks, this tool gives you practical output in seconds. The interface is intentionally simple so first-time users can start immediately and repeat tasks without relearning controls.</p>
+
+        <h2 class="mt-6 font-display text-xl font-semibold">How to Use</h2>
+        <ol class="mt-3 list-decimal space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-300">
+          <li>Choose one or multiple image files in JPG or PNG format.</li>
+          <li>Start conversion and let the browser build a downloadable PDF.</li>
+          <li>Save the generated file and share or archive it instantly.</li>
+        </ol>
+        <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">Because this is a free browser-based utility, you can run multiple attempts, adjust your input, and get better results without additional setup. This makes UtilStack useful for quick checks and repeated production tasks.</p>
+
+        <h2 class="mt-6 font-display text-xl font-semibold">Features</h2>
+        <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-300">
+          <li>Batch-friendly image to PDF converter workflow.</li>
+          <li>No app installation required for standard PDF export needs.</li>
+          <li>Quick output for forms, reports, assignments, and digital records.</li>
+        </ul>
+        <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">UtilStack keeps the tool free, fast, and straightforward. You can use it from desktop or mobile without a complex onboarding flow. This approach supports stronger productivity while preserving a private in-browser experience for routine file and text work.</p>
+
+        <h2 class="mt-6 font-display text-xl font-semibold">Frequently Asked Questions</h2>
+        <div class="mt-3 grid gap-3 text-sm text-slate-700 dark:text-slate-300">
+          <div><p class="font-semibold">Can I add multiple images in one PDF?</p><p>Yes. The converter accepts multiple images and places them in sequence.</p></div>
+          <div><p class="font-semibold">Is this image to PDF converter free?</p><p>Yes. You can use it free online without account creation.</p></div>
+          <div><p class="font-semibold">Will my images stay private?</p><p>Core conversion is handled in browser for a private and convenient workflow.</p></div>
+        </div>
+
+        <div class="mt-6 border-t border-slate-200 pt-4 text-sm dark:border-slate-700">
+          <p class="font-semibold">Related Links</p>
+          <p class="mt-2"><a class="footer-link underline-offset-4 hover:underline" href="../index.html">Home</a> | <a class="footer-link underline-offset-4 hover:underline" href="compressor.html">Compress Image Online</a> | <a class="footer-link underline-offset-4 hover:underline" href="ocr.html">OCR Image to Text</a></p>
+        </div>
+      </article>
+    </section>
 
     <footer class="border-t border-slate-200 bg-white/90 py-6 dark:border-slate-800 dark:bg-slate-950/80">
       <div class="mx-auto grid max-w-7xl gap-3 px-4 text-sm text-slate-600 sm:px-6 sm:grid-cols-2 lg:px-8 dark:text-slate-300">
@@ -87,6 +172,7 @@
           <a class="footer-link" href="json-formatter.html">JSON Formatter</a>
           <a class="footer-link" href="age-calculator.html">Age Calculator</a>
         </div>
+        <p class="text-xs text-slate-500 sm:col-span-2 sm:text-right dark:text-slate-400">Looking for daily Bhagavad Gita reading? <a class="footer-link" href="https://srma4tech.github.io/gitapath/" target="_blank" rel="noopener noreferrer">Visit GitaPath -></a> | Explore mindful counting practice: <a class="footer-link" href="https://srma4tech.github.io/digital-mantra-japa/" target="_blank" rel="noopener noreferrer">Digital Mantra Japa -></a> | Follow on Instagram: <a class="footer-link" href="https://www.instagram.com/sachin.sharma.sde/" target="_blank" rel="noopener noreferrer">@sachin.sharma.sde</a></p>
       </div>
     </footer>
   </div>
@@ -94,4 +180,8 @@
   <script type="module" src="../assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
 

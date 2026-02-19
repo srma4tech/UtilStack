@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UtilStack - Advanced Free Online Tools Platform</title>
-  <meta name="description" content="UtilStack is a free browser-based utility hub with OCR, text utilities, image conversion/compression, JSON formatting, and age calculation tools.">
-  <meta property="og:title" content="UtilStack - Advanced Free Online Tools Platform">
-  <meta property="og:description" content="A lightweight, no-backend, GitHub Pages-friendly multi-tool platform.">
+  <title>UtilStack - Free Online Tools for OCR, PDF, JSON & More</title>
+  <meta name="description" content="Use free, private, browser-based online tools for OCR image to text, image to PDF conversion, JSON formatting, word counting, and everyday productivity tasks.">
+  <meta property="og:title" content="UtilStack - Free Online Tools for OCR, PDF, JSON & More">
+  <meta property="og:description" content="Fast and private free online tools that run in your browser with no login.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourusername.github.io/UtilStack/">
-  <meta property="og:image" content="assets/images/og-cover.png">
+  <meta property="og:url" content="https://srma4tech.github.io/UtilStack/">
+  <meta property="og:image" content="https://srma4tech.github.io/UtilStack/assets/images/og-cover.png">
   <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://yourusername.github.io/UtilStack/">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="google-site-verification" content="gzKID7YrHGRlK8mjfgkV9KMbxZFUdjmfU8qWb5hMQkI" />
+  <link rel="canonical" href="https://srma4tech.github.io/UtilStack/">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -35,33 +37,71 @@
       }
     };
   </script>
+  <script src="https://cdn.tailwindcss.com" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "UtilStack",
+          "url": "https://srma4tech.github.io/UtilStack/",
+          "description": "Free online tools platform with browser-based OCR, PDF, JSON, text and utility tools."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "UtilStack",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Any",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "url": "https://srma4tech.github.io/UtilStack/",
+          "description": "A free online tools hub for OCR image to text, image to PDF converter, JSON formatter online, word counter tool, age calculator online, and compress image online workflows."
+        }
+      ]
+    }
+  </script>
 </head>
 <body class="min-h-screen font-body text-slate-900 dark:text-slate-100">
   <div class="app-bg"></div>
   <div class="relative min-h-screen">
     <header class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         <a href="index.html" class="flex items-center gap-3" aria-label="UtilStack Home">
-          <span class="grid h-10 w-10 place-content-center rounded-xl bg-brand-500 text-white shadow-lg shadow-brand-500/30">U</span>
+          <span class="grid h-10 w-10 place-content-center rounded-xl bg-[#0f7db8] text-white font-semibold shadow-lg shadow-[rgba(15,125,184,0.35)]">U</span>
           <div>
             <p class="font-display text-lg font-semibold leading-tight">UtilStack</p>
             <p class="text-xs text-slate-500 dark:text-slate-400">Advanced Free Online Tools</p>
           </div>
         </a>
-        <div class="flex items-center gap-2">
-          <button id="theme-toggle" class="btn-secondary" type="button" aria-label="Toggle dark mode">Toggle Theme</button>
-        </div>
-      </div>
+                <div class="flex items-center gap-2">
+          <button id="route-home" class="nav-tab active" type="button" aria-current="page">Home</button>
+          <button id="route-tools" class="nav-tab" type="button" aria-current="false">Tools</button>
+          <button id="theme-toggle" class="btn-secondary" type="button" aria-label="Toggle dark mode">Theme</button>
+          <a class="icon-link" href="https://github.com/srma4tech" target="_blank" rel="noopener noreferrer" aria-label="SRMA4Tech on GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+              <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6a3.18 3.18 0 0 0-1.33-1.76c-1.08-.74.08-.72.08-.72a2.5 2.5 0 0 1 1.82 1.23 2.54 2.54 0 0 0 3.47 1 2.54 2.54 0 0 1 .76-1.6c-2.66-.3-5.47-1.33-5.47-5.92a4.64 4.64 0 0 1 1.23-3.22 4.31 4.31 0 0 1 .12-3.18s1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23a4.31 4.31 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.23 3.22c0 4.6-2.82 5.62-5.5 5.92a2.84 2.84 0 0 1 .8 2.2v3.25c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/>
+            </svg>
+          </a>
+          <a class="icon-link" href="https://www.instagram.com/sachin.sharma.sde/" target="_blank" rel="noopener noreferrer" aria-label="Sachin Sharma on Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm8.5 1.5h-8.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.38-2.37a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24Z"/>
+            </svg>
+          </a>
+        </div>      </div>
     </header>
 
     <main class="mx-auto grid max-w-7xl gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[320px_1fr] lg:px-8">
-      <aside class="card p-4">
+      <aside id="tool-panel" class="card p-4 mobile-tool-panel">
         <div class="mb-3 flex items-center justify-between">
-          <h1 class="font-display text-xl">Tools</h1>
+          <p class="font-display text-xl">Tools</p>
           <span class="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 dark:bg-brand-700/20 dark:text-brand-100">7 Live</span>
         </div>
         <p class="mb-4 text-sm text-slate-600 dark:text-slate-300">Open any tool instantly. Everything runs locally in your browser.</p>
@@ -70,12 +110,35 @@
 
       <section class="card min-h-[560px] p-5 sm:p-6">
         <div class="mb-4 border-b border-slate-200 pb-4 dark:border-slate-800">
-          <h2 id="tool-title" class="font-display text-2xl font-semibold">Choose a Tool</h2>
-          <p id="tool-description" class="mt-1 text-sm text-slate-600 dark:text-slate-300">Select a tool to begin.</p>
+          <h2 id="tool-title" class="font-display text-2xl font-semibold">UtilStack Home</h2>
+          <p id="tool-description" class="mt-1 text-sm text-slate-600 dark:text-slate-300">Free everyday online tools with private, in-browser processing.</p>
         </div>
         <div id="tool-root" class="tool-fade"></div>
       </section>
     </main>
+
+    <section class="mx-auto max-w-7xl px-4 pb-6 sm:px-6 lg:px-8">
+      <article class="card p-5 sm:p-6">
+        <h1 class="font-display text-2xl font-semibold">Free Online Tools in One Place</h1>
+        <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">UtilStack is built for people who need practical work done quickly without signing up for another account. Instead of jumping between separate websites for OCR image to text, file conversion, validation, and writing utilities, you can access everything in one lightweight interface. The platform is fully browser-based, so your core tasks run locally on your device with fast response times and a familiar workflow. Whether you are a student, office user, freelancer, developer, or content creator, UtilStack gives you a reliable set of free online tools designed for everyday use. You can open the tool you need, process your file or text instantly, and move on with your day.</p>
+        <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">The most useful part of UtilStack is that it combines productivity features with privacy-first behavior. For example, if you need an image to PDF converter for reports, an OCR image to text flow for scanned screenshots, a JSON formatter online for API payload cleanup, or a word counter tool for writing limits, you do not need separate installs or heavy apps. Everything stays free, direct, and fast. You can also use age calculator online and compress image online utilities for common personal and work tasks. The experience is intentionally simple: choose a tool, add your input, get your output, and continue.</p>
+
+        <h2 class="mt-6 font-display text-xl font-semibold">Popular Tools Available</h2>
+        <ul class="mt-3 grid gap-2 text-sm text-slate-700 dark:text-slate-300 sm:grid-cols-2">
+          <li><a class="footer-link underline-offset-4 hover:underline" href="tools/ocr.html">OCR Image to Text</a> for screenshots and scanned images.</li>
+          <li><a class="footer-link underline-offset-4 hover:underline" href="tools/image-to-pdf.html">Image to PDF Converter</a> for photos, documents, and form images.</li>
+          <li><a class="footer-link underline-offset-4 hover:underline" href="tools/json-formatter.html">JSON Formatter Online</a> to validate, prettify, and minify JSON.</li>
+          <li><a class="footer-link underline-offset-4 hover:underline" href="tools/word-counter.html">Word Counter Tool</a> for writing targets and character checks.</li>
+          <li><a class="footer-link underline-offset-4 hover:underline" href="tools/text-case.html">Text Case Converter</a> for quick capitalization cleanup.</li>
+          <li><a class="footer-link underline-offset-4 hover:underline" href="tools/compressor.html">Compress Image Online</a> for faster sharing and smaller file size.</li>
+          <li><a class="footer-link underline-offset-4 hover:underline" href="tools/age-calculator.html">Age Calculator Online</a> for exact age breakdowns.</li>
+        </ul>
+
+        <h2 class="mt-6 font-display text-xl font-semibold">Why Choose UtilStack</h2>
+        <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">UtilStack is designed around real constraints: people want free tools, they want speed, and they want less friction. That is why there is no login wall and no required app install. You can open the homepage and use tools immediately. The architecture is optimized for static hosting on GitHub Pages, which keeps delivery fast and dependable. The codebase also uses modular lazy loading, so only the tool you open is loaded. This helps keep first paint and interaction times light on both desktop and mobile networks. When you visit from a phone, Home appears directly and the tools menu opens only when you tap Tools, which keeps the mobile view clean and focused.</p>
+        <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">From an SEO and discoverability perspective, UtilStack combines useful utility actions with clear explanatory content and internal linking. Each tool has its own static page, canonical URL, and focused context, which helps search engines crawl and understand relevance. If you need a stable destination for free online tools that are fast, browser-based, and private for day-to-day tasks, UtilStack is built exactly for that purpose.</p>
+      </article>
+    </section>
 
     <footer class="border-t border-slate-200 bg-white/90 py-6 dark:border-slate-800 dark:bg-slate-950/80">
       <div class="mx-auto grid max-w-7xl gap-3 px-4 text-sm text-slate-600 sm:px-6 sm:grid-cols-2 lg:px-8 dark:text-slate-300">
@@ -87,7 +150,7 @@
           <a class="footer-link" href="tools/json-formatter.html">JSON Formatter</a>
           <a class="footer-link" href="tools/age-calculator.html">Age Calculator</a>
         </div>
-        <p class="text-xs text-slate-500 sm:col-span-2 sm:text-right dark:text-slate-400">Looking for daily Bhagavad Gita reading? <a class="footer-link" href="https://srma4tech.github.io/gitapath/" target="_blank" rel="noopener noreferrer">Visit GitaPath -></a></p>
+        <p class="text-xs text-slate-500 sm:col-span-2 sm:text-right dark:text-slate-400">Looking for daily Bhagavad Gita reading? <a class="footer-link" href="https://srma4tech.github.io/gitapath/" target="_blank" rel="noopener noreferrer">Visit GitaPath -></a> | Explore mindful counting practice: <a class="footer-link" href="https://srma4tech.github.io/digital-mantra-japa/" target="_blank" rel="noopener noreferrer">Digital Mantra Japa -></a> | Follow on Instagram: <a class="footer-link" href="https://www.instagram.com/sachin.sharma.sde/" target="_blank" rel="noopener noreferrer">@sachin.sharma.sde</a></p>
       </div>
     </footer>
   </div>
@@ -95,4 +158,8 @@
   <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
 
