@@ -223,12 +223,23 @@ textarea {
 }
 
 .footer-link {
-  color: inherit;
-  text-decoration: none;
+  color: #0b638f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
 }
 
 .footer-link:hover {
   color: #0f7db8;
+  text-decoration-thickness: 2px;
+}
+
+html.dark .footer-link {
+  color: #7dd3fc;
+}
+
+html.dark .footer-link:hover {
+  color: #bae6fd;
 }
 
 .stats-grid {
