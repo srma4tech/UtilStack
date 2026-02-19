@@ -1,0 +1,158 @@
+﻿:root {
+  color-scheme: light dark;
+}
+
+body {
+  background: linear-gradient(130deg, #f8fbff 0%, #eaf4ff 45%, #f8f5ff 100%);
+}
+
+.dark body,
+html.dark body {
+  background: linear-gradient(130deg, #050a12 0%, #0a1424 45%, #0f1b2e 100%);
+}
+
+.app-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(15, 125, 184, 0.18), transparent 35%),
+    radial-gradient(circle at 90% 20%, rgba(48, 88, 218, 0.12), transparent 30%),
+    radial-gradient(circle at 30% 90%, rgba(12, 76, 122, 0.1), transparent 35%);
+}
+
+.card {
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+html.dark .card {
+  border-color: rgba(71, 85, 105, 0.5);
+  background: rgba(2, 6, 23, 0.8);
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.4);
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+  border-radius: 0.75rem;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+}
+
+.btn-primary {
+  background: #0f7db8;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0b638f;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
+}
+
+html.dark .btn-secondary {
+  border-color: rgba(100, 116, 139, 0.7);
+  background: rgba(30, 41, 59, 0.7);
+  color: #e2e8f0;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: #fff;
+}
+
+.tool-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 0.75rem;
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  width: 100%;
+  transition: all 0.18s ease;
+}
+
+.tool-link:hover,
+.tool-link.active {
+  border-color: rgba(15, 125, 184, 0.75);
+  background: rgba(15, 125, 184, 0.1);
+}
+
+.field,
+textarea,
+select,
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"] {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  border-radius: 0.75rem;
+  padding: 0.65rem 0.8rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+html.dark textarea,
+html.dark select,
+html.dark input,
+html.dark .field {
+  border-color: rgba(100, 116, 139, 0.7);
+  background: rgba(15, 23, 42, 0.75);
+}
+
+textarea {
+  min-height: 190px;
+}
+
+.tool-fade {
+  animation: fadeIn 0.25s ease;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #0f7db8;
+}
+
+.stats-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.stat-box {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 0.75rem;
+  padding: 0.8rem;
+  background: rgba(248, 250, 252, 0.75);
+}
+
+html.dark .stat-box {
+  border-color: rgba(100, 116, 139, 0.55);
+  background: rgba(15, 23, 42, 0.8);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

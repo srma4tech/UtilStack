@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Case Converter Tool - UtilStack</title>
+  <meta name="description" content="Convert text to uppercase, lowercase, title case, sentence case, and inverse case instantly.">
+  <meta property="og:title" content="Text Case Converter Tool - UtilStack">
+  <meta property="og:description" content="Convert text to uppercase, lowercase, title case, sentence case, and inverse case instantly.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/UtilStack/tools/text-case.html">
+  <meta property="og:image" content="../assets/images/og-cover.png">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://yourusername.github.io/UtilStack/tools/text-case.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef8ff',
+              100: '#d8efff',
+              500: '#0f7db8',
+              600: '#0b638f',
+              700: '#094f73'
+            }
+          },
+          fontFamily: {
+            display: ['Poppins', 'Segoe UI', 'sans-serif'],
+            body: ['Manrope', 'Segoe UI', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="min-h-screen font-body text-slate-900 dark:text-slate-100" data-default-tool="text-case">
+  <div class="app-bg"></div>
+  <div class="relative min-h-screen">
+    <header class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <a href="../index.html" class="flex items-center gap-3" aria-label="UtilStack Home">
+          <span class="grid h-10 w-10 place-content-center rounded-xl bg-brand-500 text-white shadow-lg shadow-brand-500/30">U</span>
+          <div>
+            <p class="font-display text-lg font-semibold leading-tight">UtilStack</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Advanced Free Online Tools</p>
+          </div>
+        </a>
+        <div class="flex items-center gap-2">
+          <button id="theme-toggle" class="btn-secondary" type="button" aria-label="Toggle dark mode">Toggle Theme</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto grid max-w-7xl gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[320px_1fr] lg:px-8">
+      <aside class="card p-4">
+        <div class="mb-3 flex items-center justify-between">
+          <h1 class="font-display text-xl">Tools</h1>
+          <span class="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 dark:bg-brand-700/20 dark:text-brand-100">7 Live</span>
+        </div>
+        <p class="mb-4 text-sm text-slate-600 dark:text-slate-300">Open any tool instantly. Everything runs locally in your browser.</p>
+        <nav id="tool-nav" class="grid gap-2" aria-label="Tool Navigation"></nav>
+      </aside>
+
+      <section class="card min-h-[560px] p-5 sm:p-6">
+        <div class="mb-4 border-b border-slate-200 pb-4 dark:border-slate-800">
+          <h2 id="tool-title" class="font-display text-2xl font-semibold">Choose a Tool</h2>
+          <p id="tool-description" class="mt-1 text-sm text-slate-600 dark:text-slate-300">Select a tool to begin.</p>
+        </div>
+        <div id="tool-root" class="tool-fade"></div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white/90 py-6 dark:border-slate-800 dark:bg-slate-950/80">
+      <div class="mx-auto grid max-w-7xl gap-3 px-4 text-sm text-slate-600 sm:px-6 sm:grid-cols-2 lg:px-8 dark:text-slate-300">
+        <p>UtilStack is a 100% static, privacy-first tool platform powered by in-browser processing.</p>
+        <div class="flex flex-wrap gap-3 sm:justify-end">
+          <a class="footer-link" href="ocr.html">OCR</a>
+          <a class="footer-link" href="image-to-pdf.html">Image to PDF</a>
+          <a class="footer-link" href="compressor.html">Compressor</a>
+          <a class="footer-link" href="json-formatter.html">JSON Formatter</a>
+          <a class="footer-link" href="age-calculator.html">Age Calculator</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>
+
