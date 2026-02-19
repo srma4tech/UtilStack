@@ -154,7 +154,7 @@ function renderHome() {
   rootEl.innerHTML = `
     <div class="grid gap-8">
       <section class="rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-50 via-white to-slate-50 px-5 py-8 text-center shadow-sm dark:border-slate-700 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 sm:px-8">
-        <p class="mx-auto mb-3 inline-flex rounded-full border border-brand-200 bg-white/85 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-700 dark:border-brand-700/50 dark:bg-slate-900/80 dark:text-brand-100">Private. Fast. Browser-Only.</p>
+        <p class="hero-badge mx-auto mb-3 inline-flex rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wide">Private. Fast. Browser-Only.</p>
         <h3 class="font-display text-3xl font-semibold leading-tight sm:text-4xl">UtilStack - Free Everyday Online Tools</h3>
         <p class="mx-auto mt-3 max-w-2xl text-sm text-slate-700 sm:text-base dark:text-slate-300">Use practical tools instantly with no sign-up, no backend dependency, and no file upload to external servers for core processing.</p>
         <button id="home-explore-tools" class="btn-primary mt-5" type="button">Explore Tools</button>
