@@ -68,7 +68,16 @@
       ]
     }
   </script>
-</head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTDNTZSRTH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DTDNTZSRTH', {
+      cookie_domain: 'srma4tech.github.io',
+      page_path: window.location.pathname
+    });
+  </script></head>
 <body class="min-h-screen font-body text-slate-900 dark:text-slate-100">
   <div class="app-bg"></div>
   <div class="relative min-h-screen">
@@ -158,6 +167,7 @@
   <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
+
 
 
 
