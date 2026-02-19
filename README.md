@@ -97,6 +97,14 @@ Spiritual tools are maintained as a separate product line.
 - UtilStack remains focused on global productivity utilities under SRMA4Tech branding.
 - GitaPath remains a separate spiritual app product line, linked contextually from UtilStack.
 
+## Hero & FAQ SEO Upgrade
+
+- Homepage now includes a keyword-focused premium hero section with a direct `Explore All Tools` CTA that smoothly scrolls to the tools area.
+- The hero is designed to improve engagement signals by clearly communicating speed, privacy-first processing, and no-login access.
+- A visible FAQ block was added on the homepage with real user questions and concise answers for indexing clarity.
+- JSON-LD now includes `FAQPage` (matching visible FAQ text) plus `WebSite` and `WebApplication` entities for richer search interpretation.
+- Validate structured data using Google Rich Results Test after each major homepage content update.
+
 ## GitHub Pages Deployment
 
 1. Push this repository to GitHub.

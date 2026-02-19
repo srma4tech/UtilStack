@@ -42,6 +42,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>html{scroll-behavior:smooth;}</style>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -53,7 +54,7 @@
           "description": "Free online tools platform with browser-based OCR, PDF, JSON, text and utility tools."
         },
         {
-          "@type": "SoftwareApplication",
+          "@type": "WebApplication",
           "name": "UtilStack",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Any",
@@ -64,6 +65,54 @@
           },
           "url": "https://srma4tech.github.io/UtilStack/",
           "description": "A free online tools hub for OCR image to text, image to PDF converter, JSON formatter online, word counter tool, age calculator online, and compress image online workflows."
+        }
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is UtilStack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UtilStack is a static browser-based platform that provides free online tools for common productivity tasks. It combines utilities like OCR, JSON formatting, PDF conversion, writing tools, and calculators in one place. You can use it instantly without creating an account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the tools free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The core tools in UtilStack are free to use for everyday tasks. There is no login wall for basic usage, so you can open a tool and start immediately. This helps keep utility workflows fast and accessible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do files upload to a server?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UtilStack is designed for browser-first processing in common workflows. For core actions, processing runs on your device without requiring backend accounts. This approach reduces friction and supports privacy-focused usage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which tools are included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UtilStack currently includes Screenshot to Text (OCR), Text Case Converter, Word and Character Counter, Image to PDF Converter, Image Compressor, JSON Formatter and Validator, and Age Calculator. These tools cover common student, office, and developer needs. Each tool has its own direct URL."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is UtilStack safe and private?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UtilStack uses a lightweight static architecture and emphasizes in-browser processing for core utility tasks. You do not need to create an account to run everyday actions. This combination helps keep the experience simple, fast, and privacy-conscious."
+          }
         }
       ]
     }
@@ -107,6 +156,16 @@
         </div>      </div>
     </header>
 
+    <section class="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
+      <article class="relative overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-brand-50/90 via-white/95 to-slate-100/90 p-6 shadow-[0_12px_36px_rgba(15,23,42,0.12)] backdrop-blur dark:border-slate-700/70 dark:from-slate-900/90 dark:via-slate-900/95 dark:to-slate-800/90">
+        <div class="mx-auto max-w-3xl text-center">
+          <h1 class="font-display text-3xl font-semibold leading-tight sm:text-4xl">Free Online Tools That Work Instantly in Your Browser</h1>
+          <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">No login required, privacy-first workflows, fast client-side processing, and multiple utilities in one place for everyday tasks.</p>
+          <a href="#tool-panel" class="btn-primary mt-5 inline-flex" aria-label="Explore all UtilStack tools">Explore All Tools</a>
+        </div>
+      </article>
+    </section>
+
     <main class="mx-auto grid max-w-7xl gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[320px_1fr] lg:px-8">
       <aside id="tool-panel" class="card p-4 mobile-tool-panel">
         <div class="mb-3 flex items-center justify-between">
@@ -146,6 +205,34 @@
         <h2 class="mt-6 font-display text-xl font-semibold">Why Choose UtilStack</h2>
         <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">UtilStack is designed around real constraints: people want free tools, they want speed, and they want less friction. That is why there is no login wall and no required app install. You can open the homepage and use tools immediately. The architecture is optimized for static hosting on GitHub Pages, which keeps delivery fast and dependable. The codebase also uses modular lazy loading, so only the tool you open is loaded. This helps keep first paint and interaction times light on both desktop and mobile networks. When you visit from a phone, Home appears directly and the tools menu opens only when you tap Tools, which keeps the mobile view clean and focused.</p>
         <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">From an SEO and discoverability perspective, UtilStack combines useful utility actions with clear explanatory content and internal linking. Each tool has its own static page, canonical URL, and focused context, which helps search engines crawl and understand relevance. If you need a stable destination for free online tools that are fast, browser-based, and private for day-to-day tasks, UtilStack is built exactly for that purpose.</p>
+      </article>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+      <article class="card p-5 sm:p-6">
+        <h2 class="font-display text-2xl font-semibold">Frequently Asked Questions</h2>
+        <div class="mt-4 grid gap-4 text-sm leading-7 text-slate-700 dark:text-slate-300">
+          <div>
+            <h3 class="font-display text-lg font-semibold text-slate-900 dark:text-slate-100">What is UtilStack?</h3>
+            <p>UtilStack is a static browser-based platform that provides free online tools for common productivity tasks. It combines utilities like OCR, JSON formatting, PDF conversion, writing tools, and calculators in one place. You can use it instantly without creating an account.</p>
+          </div>
+          <div>
+            <h3 class="font-display text-lg font-semibold text-slate-900 dark:text-slate-100">Are the tools free to use?</h3>
+            <p>Yes. The core tools in UtilStack are free to use for everyday tasks. There is no login wall for basic usage, so you can open a tool and start immediately. This helps keep utility workflows fast and accessible.</p>
+          </div>
+          <div>
+            <h3 class="font-display text-lg font-semibold text-slate-900 dark:text-slate-100">Do files upload to a server?</h3>
+            <p>UtilStack is designed for browser-first processing in common workflows. For core actions, processing runs on your device without requiring backend accounts. This approach reduces friction and supports privacy-focused usage.</p>
+          </div>
+          <div>
+            <h3 class="font-display text-lg font-semibold text-slate-900 dark:text-slate-100">Which tools are included?</h3>
+            <p>UtilStack currently includes Screenshot to Text (OCR), Text Case Converter, Word and Character Counter, Image to PDF Converter, Image Compressor, JSON Formatter and Validator, and Age Calculator. These tools cover common student, office, and developer needs. Each tool has its own direct URL.</p>
+          </div>
+          <div>
+            <h3 class="font-display text-lg font-semibold text-slate-900 dark:text-slate-100">Is UtilStack safe and private?</h3>
+            <p>UtilStack uses a lightweight static architecture and emphasizes in-browser processing for core utility tasks. You do not need to create an account to run everyday actions. This combination helps keep the experience simple, fast, and privacy-conscious.</p>
+          </div>
+        </div>
       </article>
     </section>
 
