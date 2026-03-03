@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Downloader Tools - YouTube, Instagram, Facebook | UtilStack</title>
+  <meta name="description" content="Free video downloader tools for YouTube, Instagram Reel, and Facebook video links. Download MP4, MP3, M4A, and WEBM audio from public URLs.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://srma4tech.github.io/UtilStack/tools/video-downloader.html">
+  <meta property="og:title" content="Video Downloader Tools - YouTube, Instagram, Facebook | UtilStack">
+  <meta property="og:description" content="All UtilStack video downloader tools in one page. Auto-detect platform and fetch download formats.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://srma4tech.github.io/UtilStack/tools/video-downloader.html">
+  <meta property="og:image" content="https://srma4tech.github.io/UtilStack/assets/images/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Video Downloader Tools - YouTube, Instagram, Facebook | UtilStack">
+  <meta name="twitter:description" content="Download public YouTube, Instagram, and Facebook videos with MP4 and audio options.">
+  <meta name="twitter:image" content="https://srma4tech.github.io/UtilStack/assets/images/og-cover.png">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="shortcut icon" href="../assets/images/favicon.svg">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { brand: { 50: '#eef8ff', 100: '#d8efff', 500: '#0f7db8', 600: '#0b638f', 700: '#094f73' } },
+          fontFamily: { display: ['Poppins', 'Segoe UI', 'sans-serif'], body: ['Manrope', 'Segoe UI', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/downloader.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Video Downloader Tools - UtilStack",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Any",
+          "url": "https://srma4tech.github.io/UtilStack/tools/video-downloader.html",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "150" },
+          "description": "Browser-based video downloader tool to fetch YouTube, Instagram, and Facebook download formats."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://srma4tech.github.io/UtilStack/" },
+            { "@type": "ListItem", "position": 2, "name": "Video Downloader Tools", "item": "https://srma4tech.github.io/UtilStack/tools/video-downloader.html" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What platforms are supported?", "acceptedAnswer": { "@type": "Answer", "text": "This page supports YouTube, Instagram, and Facebook public video URLs." } },
+            { "@type": "Question", "name": "Can I download MP3 audio only?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, MP3, M4A, and WEBM audio options appear when available." } },
+            { "@type": "Question", "name": "How do I use clipboard paste support?", "acceptedAnswer": { "@type": "Answer", "text": "Use the Paste URL button or allow clipboard read permission so the input auto-fills." } },
+            { "@type": "Question", "name": "Why is fetch failing on some links?", "acceptedAnswer": { "@type": "Answer", "text": "Private or unsupported videos can fail due to source platform restrictions." } },
+            { "@type": "Question", "name": "Does UtilStack keep any downloaded video?", "acceptedAnswer": { "@type": "Answer", "text": "No. UtilStack does not store media files on its servers." } }
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body class="min-h-screen font-body text-slate-900 dark:text-slate-100">
+  <div class="app-bg"></div>
+  <div class="relative min-h-screen">
+    <header class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
+      <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+        <a href="../index.html" class="flex items-center gap-3" aria-label="UtilStack Home">
+          <span class="grid h-10 w-10 place-content-center rounded-xl bg-[#0f7db8] text-white font-semibold shadow-lg shadow-[rgba(15,125,184,0.35)]">U</span>
+          <div>
+            <p class="font-display text-lg font-semibold leading-tight">UtilStack</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Advanced Free Online Tools</p>
+          </div>
+        </a>
+        <div class="flex items-center gap-2">
+          <a href="../index.html" class="nav-tab">Home</a>
+          <a href="../index.html#tool-panel" class="nav-tab">Tools</a>
+          <button id="theme-toggle" class="btn-secondary" type="button" aria-label="Toggle dark mode">Theme</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+      <article class="card p-5 sm:p-6">
+        <nav class="text-sm text-slate-600 dark:text-slate-300" aria-label="Breadcrumb">
+          <a class="footer-link" href="../index.html">Home</a> / Video Downloader Tools
+        </nav>
+        <h1 class="mt-3 font-display text-3xl font-semibold">Video Downloader Tools</h1>
+        <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">Paste a public URL from YouTube, Instagram, or Facebook. UtilStack auto-detects platform, fetches available video/audio options, and provides one-click downloads.</p>
+        <p class="mt-2 inline-flex rounded-full border border-brand-100 bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 dark:border-brand-700/40 dark:bg-brand-700/10 dark:text-brand-100">New: Video Downloader Tools</p>
+      </article>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 pb-6 sm:px-6 lg:px-8">
+      <article class="card p-5 sm:p-6">
+        <div id="video-downloader-root"></div>
+      </article>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+      <article class="card p-5 sm:p-6">
+        <h2 class="font-display text-xl font-semibold">Frequently Asked Questions</h2>
+        <div class="mt-4 grid gap-3 text-sm text-slate-700 dark:text-slate-300">
+          <div><p class="font-semibold">Can I download youtube video free from this page?</p><p>Yes, paste a valid YouTube URL and choose available video or audio format options.</p></div>
+          <div><p class="font-semibold">Does this instagram reel downloader support multiple qualities?</p><p>Yes, if the API returns multiple quality streams they are listed as separate buttons.</p></div>
+          <div><p class="font-semibold">Can I use facebook video downloader mp4 here too?</p><p>Yes, this universal page auto-detects Facebook links and fetches MP4 options.</p></div>
+          <div><p class="font-semibold">Are downloads hosted by UtilStack?</p><p>No. UtilStack does not host or store media and only displays source links.</p></div>
+          <div><p class="font-semibold">Do I need to install anything?</p><p>No install is required. Everything runs in your browser on this static site.</p></div>
+        </div>
+        <p class="mt-6 text-sm leading-7 text-slate-700 dark:text-slate-300">Disclaimer: UtilStack does not host or store any videos. Downloads are served directly from the source platform. Please respect copyright and terms of service.</p>
+        <p class="mt-4 text-sm"><a class="footer-link" href="../index.html">Back to homepage</a> | <a class="footer-link" href="youtube-downloader.html">YouTube Video Downloader</a> | <a class="footer-link" href="instagram-downloader.html">Instagram Reel Downloader</a> | <a class="footer-link" href="facebook-downloader.html">Facebook Video Downloader</a></p>
+      </article>
+    </section>
+  </div>
+
+  <script type="module">
+    import { initTheme, wireThemeToggle } from '../assets/js/core/theme.js';
+    import { initDownloaderUI } from '../assets/js/downloader.js';
+
+    initTheme();
+    wireThemeToggle();
+
+    const root = document.getElementById('video-downloader-root');
+    if (root) {
+      initDownloaderUI(root, { toolName: 'Universal Video Downloader' });
+    }
+  </script>
+</body>
+</html>

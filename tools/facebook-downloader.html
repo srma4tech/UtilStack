@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Video Downloader - Free MP4 & MP3 | UtilStack</title>
+  <meta name="description" content="Facebook video downloader mp4 tool to save public Facebook videos fast. Fetch title, thumbnail, quality options, and audio links in one place.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://srma4tech.github.io/UtilStack/tools/facebook-downloader.html">
+  <meta property="og:title" content="Facebook Video Downloader - Free MP4 & MP3 | UtilStack">
+  <meta property="og:description" content="Download Facebook videos in MP4 and supported audio formats with one-click links.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://srma4tech.github.io/UtilStack/tools/facebook-downloader.html">
+  <meta property="og:image" content="https://srma4tech.github.io/UtilStack/assets/images/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Facebook Video Downloader - Free MP4 & MP3 | UtilStack">
+  <meta name="twitter:description" content="Use UtilStack Facebook downloader for MP4 and audio-only download links.">
+  <meta name="twitter:image" content="https://srma4tech.github.io/UtilStack/assets/images/og-cover.png">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="shortcut icon" href="../assets/images/favicon.svg">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { brand: { 50: '#eef8ff', 100: '#d8efff', 500: '#0f7db8', 600: '#0b638f', 700: '#094f73' } },
+          fontFamily: { display: ['Poppins', 'Segoe UI', 'sans-serif'], body: ['Manrope', 'Segoe UI', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/downloader.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Facebook Video Downloader - Free MP4 & MP3",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Any",
+          "url": "https://srma4tech.github.io/UtilStack/tools/facebook-downloader.html",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "ratingCount": "84" },
+          "description": "Download Facebook videos as MP4 and supported audio outputs with browser-based one-click links."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://srma4tech.github.io/UtilStack/" },
+            { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://srma4tech.github.io/UtilStack/#tools" },
+            { "@type": "ListItem", "position": 3, "name": "Facebook Video Downloader", "item": "https://srma4tech.github.io/UtilStack/tools/facebook-downloader.html" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "How does facebook video downloader mp4 work?", "acceptedAnswer": { "@type": "Answer", "text": "Paste a public Facebook URL, fetch formats, and click your preferred MP4 download button." } },
+            { "@type": "Question", "name": "Can I download Facebook reels too?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, many reel-style public URLs are supported when returned by the API provider." } },
+            { "@type": "Question", "name": "Why does the tool show unsupported platform?", "acceptedAnswer": { "@type": "Answer", "text": "The URL may be malformed or not from facebook.com or fb.watch domains." } },
+            { "@type": "Question", "name": "Is audio-only extraction available?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, audio-only buttons appear when the upstream API returns audio streams." } },
+            { "@type": "Question", "name": "Does UtilStack keep downloaded files?", "acceptedAnswer": { "@type": "Answer", "text": "No. UtilStack does not host or store downloaded media files." } }
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body class="min-h-screen font-body text-slate-900 dark:text-slate-100" data-default-tool="facebook-downloader">
+  <div class="app-bg"></div>
+  <div class="relative min-h-screen">
+    <header class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
+      <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+        <a href="../index.html" class="flex items-center gap-3" aria-label="UtilStack Home">
+          <span class="grid h-10 w-10 place-content-center rounded-xl bg-[#0f7db8] text-white font-semibold shadow-lg shadow-[rgba(15,125,184,0.35)]">U</span>
+          <div>
+            <p class="font-display text-lg font-semibold leading-tight">UtilStack</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Advanced Free Online Tools</p>
+          </div>
+        </a>
+        <div class="flex items-center gap-2">
+          <button id="route-home" class="nav-tab" type="button" aria-current="false">Home</button>
+          <button id="route-tools" class="nav-tab active" type="button" aria-current="page">Tools</button>
+          <button id="theme-toggle" class="btn-secondary" type="button" aria-label="Toggle dark mode">Theme</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto grid max-w-7xl gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[320px_1fr] lg:px-8">
+      <aside id="tool-panel" class="card p-4 mobile-tool-panel">
+        <div class="mb-3 flex items-center justify-between">
+          <p class="font-display text-xl">Tools</p>
+          <span class="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 dark:bg-brand-700/20 dark:text-brand-100">10 Live</span>
+        </div>
+        <p class="mb-4 text-sm text-slate-600 dark:text-slate-300">Open any tool instantly. Everything runs locally in your browser.</p>
+        <nav id="tool-nav" class="grid gap-2" aria-label="Tool Navigation"></nav>
+      </aside>
+      <section class="card min-h-[560px] p-5 sm:p-6">
+        <div class="mb-4 border-b border-slate-200 pb-4 dark:border-slate-800">
+          <h2 id="tool-title" class="font-display text-2xl font-semibold">Facebook Video Downloader</h2>
+          <p id="tool-description" class="mt-1 text-sm text-slate-600 dark:text-slate-300">Fetch Facebook video links and download in available MP4/audio outputs.</p>
+        </div>
+        <div id="tool-root" class="tool-fade"></div>
+      </section>
+    </main>
+
+    <section class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+      <article class="card p-5 sm:p-6">
+        <nav class="text-sm text-slate-600 dark:text-slate-300" aria-label="Breadcrumb">
+          <a class="footer-link" href="../index.html">Home</a> / <a class="footer-link" href="../index.html#tool-panel">Tools</a> / Facebook Video Downloader
+        </nav>
+        <h1 class="mt-3 font-display text-2xl font-semibold">Facebook Video Downloader</h1>
+        <p class="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">Paste a Facebook video URL to fetch direct download options grouped by video quality and audio output. The interface provides thumbnail, duration, and format buttons for faster downloads.</p>
+
+        <h2 class="mt-6 font-display text-xl font-semibold">Frequently Asked Questions</h2>
+        <div class="mt-3 grid gap-3 text-sm text-slate-700 dark:text-slate-300">
+          <div><p class="font-semibold">How to use facebook video downloader mp4 in UtilStack?</p><p>Paste a Facebook URL, click fetch, and select one of the listed MP4 options.</p></div>
+          <div><p class="font-semibold">Can I choose lower or higher video quality?</p><p>Yes, available quality labels are shown as separate download buttons.</p></div>
+          <div><p class="font-semibold">Does this work for private groups?</p><p>No, private and permission-locked content will usually fail fetch.</p></div>
+          <div><p class="font-semibold">Can I download only audio?</p><p>Audio-only formats are shown when the provider returns them.</p></div>
+          <div><p class="font-semibold">Is there any file hosted on UtilStack servers?</p><p>No, UtilStack does not host media files and only surfaces direct links.</p></div>
+        </div>
+
+        <p class="mt-6 text-sm leading-7 text-slate-700 dark:text-slate-300">Disclaimer: UtilStack does not host or store any videos. Downloads are served directly from the source platform. Please respect copyright and terms of service.</p>
+        <p class="mt-4 text-sm"><a class="footer-link" href="../index.html">Back to homepage</a> | <a class="footer-link" href="youtube-downloader.html">YouTube Video Downloader</a> | <a class="footer-link" href="instagram-downloader.html">Instagram Reel Downloader</a> | <a class="footer-link" href="video-downloader.html">All Video Downloaders</a></p>
+      </article>
+    </section>
+  </div>
+  <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>

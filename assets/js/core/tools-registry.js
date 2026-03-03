@@ -1,4 +1,4 @@
-﻿export const tools = [
+export const tools = [
   {
     id: 'ocr',
     name: 'Screenshot to Text (OCR)',
@@ -54,6 +54,30 @@
     icon: '🎂',
     modulePath: '../modules/age-calculator.js',
     seoPath: 'tools/age-calculator.html'
+  },
+  {
+    id: 'youtube-downloader',
+    name: 'YouTube Video Downloader',
+    description: 'Download YouTube videos in MP4 or extract audio in MP3, M4A, and WEBM.',
+    icon: '▶️',
+    modulePath: '../modules/youtube-downloader.js',
+    seoPath: 'tools/youtube-downloader.html'
+  },
+  {
+    id: 'instagram-downloader',
+    name: 'Instagram Reel Downloader',
+    description: 'Download Instagram Reels and videos in multiple quality options.',
+    icon: '📸',
+    modulePath: '../modules/instagram-downloader.js',
+    seoPath: 'tools/instagram-downloader.html'
+  },
+  {
+    id: 'facebook-downloader',
+    name: 'Facebook Video Downloader',
+    description: 'Save Facebook video links quickly with MP4 and audio export choices.',
+    icon: '📘',
+    modulePath: '../modules/facebook-downloader.js',
+    seoPath: 'tools/facebook-downloader.html'
   }
 ];
 

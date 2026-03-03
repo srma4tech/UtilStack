@@ -11,6 +11,7 @@ const toolPanelEl = document.getElementById('tool-panel');
 let currentRoute = 'home';
 let panelOverlayEl = null;
 const HOME_TAB_TITLE = 'UtilStack - Free Online Tools for OCR, PDF, JSON & More';
+const ANNOUNCEMENT_TEXT = 'New: Video Downloader Tools';
 
 function getBasePathPrefix() {
   const path = window.location.pathname;
@@ -93,6 +94,32 @@ function markTopNav(route) {
     toolsTabEl.classList.toggle('active', !isHome);
     toolsTabEl.setAttribute('aria-current', !isHome ? 'page' : 'false');
   }
+}
+
+function syncToolsLiveCount() {
+  const countEl = toolPanelEl?.querySelector('span');
+  if (countEl) {
+    countEl.textContent = `${tools.length} Live`;
+  }
+}
+
+function ensureAnnouncementBar() {
+  const header = document.querySelector('header');
+  if (!header || document.getElementById('site-announcement')) {
+    return;
+  }
+
+  const bar = document.createElement('section');
+  bar.id = 'site-announcement';
+  bar.className = 'mx-auto mt-4 max-w-7xl px-4 sm:px-6 lg:px-8';
+  bar.innerHTML = `
+    <div class="rounded-xl border border-brand-100 bg-brand-50/80 px-4 py-2 text-sm font-medium text-brand-700 dark:border-brand-700/40 dark:bg-brand-700/10 dark:text-brand-100">
+      ${ANNOUNCEMENT_TEXT}
+      <a class="ml-2 footer-link" href="${getBasePathPrefix()}tools/video-downloader.html">Try now</a>
+    </div>
+  `;
+
+  header.insertAdjacentElement('afterend', bar);
 }
 
 function buildNav() {
@@ -281,6 +308,8 @@ function wireTopNav() {
 export function initApp() {
   ensureMobilePanelElements();
   syncPanelViewportMode();
+  syncToolsLiveCount();
+  ensureAnnouncementBar();
   buildNav();
   wireTopNav();
   openRoute(getInitialRoute(), false);

@@ -1,0 +1,239 @@
+.downloader-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.downloader-kicker {
+  display: inline-flex;
+  width: fit-content;
+  border: 1px solid rgba(15, 125, 184, 0.35);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0b638f;
+  background: rgba(15, 125, 184, 0.08);
+}
+
+.downloader-heading {
+  font-family: Poppins, Segoe UI, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.downloader-note,
+.downloader-disclaimer,
+.media-sub,
+.download-size {
+  color: rgb(71 85 105);
+  font-size: 0.9rem;
+}
+
+.downloader-form {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.downloader-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.downloader-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.downloader-feedback {
+  min-height: 160px;
+}
+
+.downloader-result {
+  display: grid;
+  gap: 1rem;
+}
+
+.platform-chip {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.platform-youtube {
+  background: rgba(220, 38, 38, 0.15);
+  color: rgb(153, 27, 27);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+}
+
+.platform-instagram {
+  background: rgba(190, 24, 93, 0.14);
+  color: rgb(157, 23, 77);
+  border: 1px solid rgba(190, 24, 93, 0.28);
+}
+
+.platform-facebook {
+  background: rgba(37, 99, 235, 0.14);
+  color: rgb(30, 64, 175);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+}
+
+.media-meta {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 0.85rem;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.media-thumb {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+.media-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.format-block {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.format-block h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 0.65rem;
+}
+
+.download-card {
+  text-align: left;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  border-radius: 0.75rem;
+  padding: 0.7rem;
+  background: rgba(248, 250, 252, 0.75);
+  transition: all 0.18s ease;
+}
+
+.download-card:hover {
+  border-color: rgba(15, 125, 184, 0.65);
+  transform: translateY(-1px);
+}
+
+.download-label {
+  display: block;
+  font-weight: 700;
+  color: rgb(15 23 42);
+}
+
+.downloader-empty {
+  border: 1px dashed rgba(148, 163, 184, 0.55);
+  border-radius: 0.75rem;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  color: rgb(71 85 105);
+}
+
+.downloader-error {
+  border: 1px solid rgba(248, 113, 113, 0.65);
+  border-radius: 0.75rem;
+  background: rgba(254, 242, 242, 0.8);
+  color: rgb(153, 27, 27);
+  padding: 0.8rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.downloader-skeleton {
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 0.75rem;
+  padding: 0.8rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.skeleton-line,
+.skeleton-thumb {
+  background: linear-gradient(90deg, rgba(148, 163, 184, 0.3), rgba(148, 163, 184, 0.15), rgba(148, 163, 184, 0.3));
+  background-size: 200% 100%;
+  animation: skeleton-pulse 1.2s linear infinite;
+  border-radius: 0.5rem;
+}
+
+.skeleton-line {
+  height: 0.9rem;
+}
+
+.skeleton-thumb {
+  width: 100%;
+  height: 180px;
+}
+
+@keyframes skeleton-pulse {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+html.dark .downloader-note,
+html.dark .downloader-disclaimer,
+html.dark .media-sub,
+html.dark .download-size,
+html.dark .downloader-empty {
+  color: rgb(203 213 225);
+}
+
+html.dark .downloader-kicker {
+  color: rgb(125 211 252);
+  background: rgba(56, 189, 248, 0.16);
+  border-color: rgba(56, 189, 248, 0.35);
+}
+
+html.dark .downloader-form,
+html.dark .media-meta {
+  background: rgba(15, 23, 42, 0.85);
+  border-color: rgba(100, 116, 139, 0.6);
+}
+
+html.dark .download-card {
+  background: rgba(15, 23, 42, 0.85);
+  border-color: rgba(100, 116, 139, 0.65);
+}
+
+html.dark .download-card:hover {
+  border-color: rgba(56, 189, 248, 0.9);
+}
+
+html.dark .download-label,
+html.dark .media-title {
+  color: rgb(248 250 252);
+}
+
+html.dark .downloader-error {
+  background: rgba(127, 29, 29, 0.35);
+  border-color: rgba(248, 113, 113, 0.6);
+  color: rgb(254, 202, 202);
+}
